@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train-Scheduler</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" type="assets/style.css">
+  
+</head>
+
+<body>
+<!-- Start Jumbotron -->
+
+ <div class="container">
+ 	 <div class="jumbotron text-center">
+ 	
+ 		<h1>Anytime is Train Time</h1>
+ 		<h3>Choo Choo. Chee Chee.</h3>
+  		
+ </div>
+</div>
+<!--  End Jumbotron -->
+
+<!-- Start Table -->
+<div class="container"> 
+
+<div class="panel panel-primary">
+ <div class="panel-heading panel-heading-primary" id="trainTable">Add Train</div>
+  <div class="panel-body">
+   <table class="table table-bordered"> 
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency (min)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+      </tr>
+    </table>
+  </div>
+ </div>
+
+<!-- End Table -->
+
+<!-- Start Form -->
+<div class="panel panel-primary">
+	<div class="panel-heading panel-heading-primary">Add Train</div>
+	<div class="panel-body">
+		
+			<div class="form-group">
+				<label for="">Train Name</label>
+				<input type="text" class="form-control" id="trainNameInput">
+				<label for="">Destination</label>
+				<input type="text" class="form-control" id="destinationInput">
+				<label for="">First Train Time (HH:mm - military time)</label>
+				<input type="text" class="form-control" id="trainTimeInput">
+				<label for="">Frequency (min)</label>
+				<input type="text" class="form-control" id="frequencyInput">
+			</div>
+			<button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
+	
+	</div>
+   </div>
+
+ </div>
+</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	 <script src="https://code.jquery.com/jquery.js"></script>
+	 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="assets/add.js"></script>
+</body>
+</html>
